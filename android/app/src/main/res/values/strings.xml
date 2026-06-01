@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">SHAP SHOP BENI</string>
+    <string name="title_activity_main">SHAP SHOP BENI</string>
+    <string name="package_name">com.shapshop.beni</string>
+    <string name="custom_url_scheme">com.shapshop.beni</string>
+</resources>
