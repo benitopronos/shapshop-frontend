@@ -8,27 +8,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Cloner le dépôt
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Installer Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: 22
 
-      - name: Installer Java
+      - name: Setup Java
         uses: actions/setup-java@v4
         with:
           distribution: temurin
           java-version: 21
 
-      - name: Installer dépendances
+      - name: Install dependencies
         run: npm install
 
       - name: Sync Capacitor
         run: npx cap sync android
 
-      - name: Compiler APK
+      - name: Build APK
         run: |
           cd android
           chmod +x gradlew
